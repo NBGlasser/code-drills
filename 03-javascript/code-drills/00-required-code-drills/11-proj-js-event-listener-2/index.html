@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Event Listeners</title>
+</head>
+<body>
+  <h1>Event Listeners</h1>
+
+  <p id="userchoice-text"></p>
+  <script>
+    var userKeys = []
+    var alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+    var userChoiceText = document.getElementById("userchoice-text")
+    document.onkeyup = function(event) {
+        var userKey = event.key;
+        console.log(userKey)
+
+        if(!alphabet.includes(userKey)){
+          alert("press a letter")
+        }
+        else{
+          userKeys.push(userKey)
+          console.log(userKeys)
+          userChoiceText.textContent = userKeys;
+        }
+    }
+      
+      
+  </script>
+</body>
+</html>

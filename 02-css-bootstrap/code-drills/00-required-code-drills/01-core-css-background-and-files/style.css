@@ -1,0 +1,67 @@
+*,
+*::after,
+*::before {
+/* This ensures that there is no whitespace surrounding our content. Comment this out or delete it, and you may see some unwelcome whitespace 😖. The * means everything. the ::after and ::before are pseudo elements, we'll cover these later in class */
+  margin: 0;
+  padding: 0;
+
+  /* This is for our anchor (<a>) tag. It makes it so that there is a scrolling effect when we navigate to other parts of our page */
+  scroll-behavior: smooth;
+}
+
+.main {
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  position: relative;
+}
+
+.box1{
+position: absolute;
+width: 100px;
+height: 100px;
+background-color: red;
+top: 0%;
+left: 0%;
+}
+
+.box2{
+position: absolute;
+width: 100px;
+height: 100px; 
+background-color: blue;
+top: 0%;
+right: 0%;
+}
+
+.box3{
+position: absolute;
+width: 100px;
+height: 100px;
+background-color: gold;
+bottom: 0%;
+left: 0%;
+}
+
+.box4{
+position: absolute;
+width: 100px;
+height: 100px; 
+background-color: lightgreen;
+bottom: 0%;
+right: 0%;
+}
+
+a{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: magenta;
+}
+
+.second{
+  height: 100vh;
+  width: 100%;
+  background-color: orange;
+  position: relative;
+}
